@@ -1010,7 +1010,7 @@ li {
 
 .reservation-form-area,
 .contact-form-area {
-    width: calc(50% - 100px);
+    width: calc(100% - 100px);
 }
 
 .reservation-side-thumb {
@@ -1020,7 +1020,7 @@ li {
 .reservation-form,
 .contact-form {
     width: 390px;
-    margin-right: 67.5px;
+    margin: auto;
 }
 
 .reservation-form .form-control,
