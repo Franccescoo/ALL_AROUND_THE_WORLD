@@ -842,7 +842,7 @@ li {
     font-size: 150px;
     right: -10%;
     margin: 0;
-    content: 'Special';
+    content: 'Recetas';
     line-height: 1;
     top: 35%;
     -webkit-transform: rotate(-90deg);
@@ -1284,4 +1284,11 @@ blockquote img {
     color: rgba(0, 0, 0, 0.6);
     margin-bottom: 0;
     font-weight: 600;
+}
+.Title_menu{
+    text-align: center; 
+    color: #ff0000; 
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
 }
