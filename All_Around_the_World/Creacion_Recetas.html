@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>All Around The World - Chile | Menu</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/cocinero.png">
+
+    <!-- Core Stylesheet -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="caviar-load"></div>
+        <div class="preload-icons">
+            <img class="preload-1" src="img/core-img/preload-1.png" alt="">
+            <img class="preload-2" src="img/core-img/preload-2.png" alt="">
+            <img class="preload-3" src="img/core-img/preload-3.png" alt="">
+        </div>
+    </div>
+
+    <!-- ***** Search Form Area ***** -->
+    <div class="caviar-search-form d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="search-close-btn" id="closeBtn">
+                        <i class="pe-7s-close-circle" aria-hidden="true"></i>
+                    </div>
+                    <form action="#" method="get">
+                        <input type="search" name="caviarSearch" id="search"
+                            placeholder="Search Your Favourite Dish ...">
+                        <input type="submit" class="d-none" value="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header_area" id="header">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 h-100">
+                    <nav class="h-100 navbar navbar-expand-lg align-items-center">
+                        <a class="navbar-brand" href="index.html">All Around The World</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#caviarNav"
+                            aria-controls="caviarNav" aria-expanded="false" aria-label="Toggle navigation"><span
+                                class="fa fa-bars"></span></button>
+                        <div class="collapse navbar-collapse" id="caviarNav">
+                            <ul class="navbar-nav ml-auto" id="caviarMenu">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="menu.html">Inicio <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="menu.html">Paises</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contactanos</a>
+                                </li>
+                            </ul>
+                            <!-- Search Btn -->
+                            <div class="caviar-search-btn">
+                                <a id="search-btn" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Breadcumb Area Start ***** -->
+    <div class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/food/FondoChile.png)">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcumb-content">
+                        <h2>Creacion</h2>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Breadcumb Area End ***** -->
+
+    <!-- ***** Menu Area Start ***** -->
+    <div class="caviar-food-menu section-padding-150 clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <form action="/action_page.php">
+                        <div>
+                            <form action="upload.php" method="post" enctype="multipart/form-data">
+                                Select image to upload:
+                                <input type="file" name="fileToUpload" id="fileToUpload">
+                            </form>
+                        </div>
+                        <div>
+                            <label for="nombreReceta">Nombre De La Receta:</label>
+                            <input type="text" id="nombreReceta" name="nombreReceta">
+                        </div>
+                        <div>
+                            <label for="tiempo">Tiempo De Preparacion (minutos):</label>
+                            <input type="text" id="tiempo" name="tiempo">
+                        </div>
+                        <div>
+                            <label for="idTipoAlimento">Tipo De Alimento:</label>
+                            <select name="idTipoAlimento" id="idTipoAlimento">
+                                <option value="1">Comida</option>
+                                <option value="2">Postre</option>
+                                <option value="3">Bebida</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="idNacionalidad">Nacionalidad:</label>
+                            <select name="idNacionalidad" id="idNacionalidad">
+                                <option value="1">Chile</option>
+                                <option value="2">Argentina</option>
+                                <option value="3">Venezuela</option>
+                                <option value="4">Brasil</option>
+                                <option value="5">Perú</option>
+                                <option value="6">Ecuador</option>
+                                <option value="7">Uruguay</option>
+                                <option value="8">Colombia</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="idTipoDieta">Dieta:</label>
+                            <select name="idTipoDieta" id="idTipoDieta">
+                                <option value="1">N/A</option>
+                                <option value="2">Kosher</option>
+                                <option value="3">Vegetariana</option>
+                                <option value="4">Vegana</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="idDificultad">Dificultad:</label>
+                            <select name="idDificultad" id="idDificultad">
+                                <option value="1">Facil</option>
+                                <option value="2">Media</option>
+                                <option value="3">Dificil</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-sm-12">
+                                <div>
+                                    <label for="ingredientes">Ingredientes:</label>
+                                </div>
+                                <textarea id="ingredientes" name="ingredientes" rows="5" cols="40"></textarea>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-sm-12">
+                                <div>
+                                    <label for="preparacion">Preparacion:</label>
+                                </div>
+                                <textarea id="preparacion" name="preparacion" rows="5" cols="40"></textarea> <br> <br>
+                            </div>
+                        </div>
+
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Menu Area End ***** -->
+
+    <!-- ***** Footer Area Start ***** -->
+    <footer class="caviar-footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-text">
+                        <a href="index.html" class="navbar-brand">All Around The World</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p>Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                            template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+                                href="https://colorlib.com" target="_blank">Colorlib</a>
+                        </p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ***** Footer Area Start ***** -->
+
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/others/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
