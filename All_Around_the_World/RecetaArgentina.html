@@ -20,6 +20,9 @@
     <!-- Responsive CSS -->
     <link href="css/responsive/responsive.css" rel="stylesheet">
 
+    <!--Popup-->
+    <link rel="stylesheet" href="css/popup.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -117,53 +120,79 @@
                     <div>
 
                         <div class="caviar-portfolio clearfix">
-                            <!-- Single Gallery Item -->
-                            <div class="single_menu_item breakfast wow fadeInUp">
-                                <a href="ARG_Fugazzeta.html">
-                                    <div class="d-sm-flex align-items-center">
-                                        <div class="dish-thumb">
-                                            <img src="img/Token/Token_Fugazzeta.png" alt="No hay imagen"
-                                                style="width: 100%; max-width: 400px;">
-                                        </div>
 
-                                        <div class="dish-description">
-                                            <h3>Fugazzeta</h3>
-                                            <p>Pizza origiraria de Argentina en la cual el queso y la cebolla son los ingredientes protagonistas</p>
-                                        </div>
 
-                                    </div>
-                                </a>
-                            </div>
                             <!-- Single Gallery Item -->
                             <div class="single_menu_item breakfast wow fadeInUp">
-                                <a href="ARG_Alfajor.html">
-                                    <div class="d-sm-flex align-items-center">
-                                        <div class="dish-thumb">
-                                            <img src="img/Token/Token_Alfajor.png" alt=""
-                                                style="width: 100%; max-width: 400px;">
-                                        </div>
-                                        <div class="dish-description">
-                                            <h3>Alfajor</h3>
-                                            <p>Postre de la pasteleria argentina, una galleta que se disuelve en la boca con cada mordida con manjar en su interior</p>
+                                <div class="d-sm-flex align-items-center">
+                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
+                                        <img src="img//Token/Token_Fugazzeta.png" alt="" style="min-width: 300px;">
+                                        <div class="dish-info">
+                                            <h6 class="dish-name">Fugazzeta</h6>
+                                            <div class="popup" onclick="myFunction1()">
+                                                <p class="dish-price">Desc</p>
+                                                <span class="popuptext" id="myPopup1">Pizza origiraria de Argentina en
+                                                    la cual el queso y la cebolla son los ingredientes protagonistas.
+                                                </span>
+                                            </div>
+                                            <a href="ARG_Fugazzeta.html">
+                                                <p class="dish-price">Ver</p>
+                                            </a>
                                         </div>
                                     </div>
-                                </a>
+
+                                </div>
+
                             </div>
+
                             <!-- Single Gallery Item -->
                             <div class="single_menu_item breakfast wow fadeInUp">
-                                <a href="ARG_Mate.html">
-                                    <div class="d-sm-flex align-items-center">
-                                        <div class="dish-thumb">
-                                            <img src="img/Token/Token_Mate.png" alt=""
-                                                style="width: 100%; max-width: 400px;">
-                                        </div>
-                                        <div class="dish-description">
-                                            <h3>Mate</h3>
-                                            <p>Bebida tradicional Argentina, es un gusto adquirido pero una ves le tomas el ritmo se volvera tu favotita</p>
+                                <div class="d-sm-flex align-items-center">
+                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
+                                        <img src="img//Token/Token_Alfajor.png" alt="" style="min-width: 300px;">
+                                        <div class="dish-info">
+                                            <h6 class="dish-name">Alfajor</h6>
+                                            <div class="popup" onclick="myFunction2()">
+                                                <p class="dish-price">Desc</p>
+                                                <span class="popuptext" id="myPopup2">Postre de la pasteleria Argentina,
+                                                    una galleta que se disuelve en la boca
+                                                    con cada mordida con manjar en su interior.
+                                                </span>
+                                            </div>
+                                            <a href="ARG_Alfajor.html">
+                                                <p class="dish-price">Ver</p>
+                                            </a>
                                         </div>
                                     </div>
-                                </a>
+
+                                </div>
+
                             </div>
+
+
+                            <!-- Single Gallery Item -->
+                            <div class="single_menu_item breakfast wow fadeInUp">
+                                <div class="d-sm-flex align-items-center">
+                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
+                                        <img src="img//Token/Token_Mate.png" alt="" style="min-width: 300px;">
+                                        <div class="dish-info">
+                                            <h6 class="dish-name">Mate</h6>
+                                            <div class="popup" onclick="myFunction3()">
+                                                <p class="dish-price">Desc</p>
+                                                <span class="popuptext" id="myPopup3">Bebida tradicional Argentina, es
+                                                    un gusto adquirido pero una ves le tomas
+                                                    el ritmo se volvera tu favotita
+                                                </span>
+                                            </div>
+                                            <a href="ARG_Alfajor.html">
+                                                <p class="dish-price">Ver</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -246,4 +275,23 @@
     <script src="js/others/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+    <!--Popup-->
+    <script>
+        // When the user clicks on div, open the popup
+        function myFunction1() {
+            var popup = document.getElementById("myPopup1");
+            popup.classList.toggle("show");
+        }
+        // When the user clicks on div, open the popup
+        function myFunction2() {
+            var popup = document.getElementById("myPopup2");
+            popup.classList.toggle("show");
+        }
+        // When the user clicks on div, open the popup
+        function myFunction3() {
+            var popup = document.getElementById("myPopup3");
+            popup.classList.toggle("show");
+        }
+    </script>
+
 </body>
