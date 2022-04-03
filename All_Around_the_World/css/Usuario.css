@@ -63,3 +63,33 @@
   font-size: 60px;
   padding-left: 1em;
 }
+
+.datos{
+  position: relative;
+  bottom: 300px;
+  left: 100px;
+  color: #ff0000;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+}
+
+.topnav {
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
