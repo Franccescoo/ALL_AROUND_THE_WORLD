@@ -20,6 +20,10 @@
     <!-- Responsive CSS -->
     <link href="css/responsive/responsive.css" rel="stylesheet">
 
+    <!--Popup-->
+    <link rel="stylesheet" href="css/popup.css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -120,89 +124,70 @@
                             <!-- Single Gallery Item -->
                             <div class="single_menu_item breakfast wow fadeInUp">
                                 <div class="d-sm-flex align-items-center">
-                                        <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
-                                            <img src="img//Token/Token_Completo.png" alt="" style="min-width: 300px;">
-                                            <div class="dish-info">
-                                                <h6 class="dish-name">Completo</h6>
-                                                <a href="CHI_Completo.html">
-                                                <p class="dish-price">Ver</p>
-                                                </a>
+                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
+                                        <img src="img//Token/Token_Completo.png" alt="" style="min-width: 300px;">
+                                        <div class="dish-info">
+                                            <h6 class="dish-name">Completo</h6>
+                                            <div class="popup" onclick="myFunction1()">
+                                                <p class="dish-price">Desc</p>
+                                                <span class="popuptext" id="myPopup1">Completo tradicional Chileno con
+                                                    palta (Aguacate) y tomate.</span>
                                             </div>
-                                        </div>
-                                        <p>Completo tradicional Chileno con palta (Aguacate) y tomate</p>
-                                </div>
-                            </div>
-                            <!-- Single Gallery Item -->
-                            <div class="single_menu_item breakfast wow fadeInUp">
-                                <div class="d-sm-flex align-items-center">
-                                        <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
-                                            <img src="img//Token/Token_Casuela.png" alt="" style="min-width: 300px;">
-                                            <div class="dish-info">
-                                                <h6 class="dish-name">Casuela</h6>
-                                                <a href="CHI_Completo.html">
+                                            <a href="CHI_Completo.html">
                                                 <p class="dish-price">Ver</p>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <p>Casuela hecha por la abuela.</p>                                </div>
-                            </div>
-                            <!-- Single Gallery Item -->
-                            <div class="single_menu_item breakfast wow fadeInUp">
-                                <div class="d-sm-flex align-items-center">
-                                        <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
-                                            <img src="img//Token/Token_Chilenito.png" alt="" style="min-width: 300px;">
-                                            <div class="dish-info">
-                                                <h6 class="dish-name">Chilenito</h6>
-                                                <a href="CHI_Chilenito.html">
-                                                <p class="dish-price">Ver</p>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <p>Casuela hecha por la abuela.</p>                                </div>
-                            </div>
-                            <!-- Single Gallery Item -->
-                            <div class="single_menu_item breakfast wow fadeInUp">
-                                <div class="d-sm-flex align-items-center">
-                                    <div class="dish-thumb">
-                                        <img src="img/Token/Token_Casuela.png" alt=""
-                                            style="width: 100%; max-width: 400px;">
-                                    </div>
-                                    <div class="dish-description">
-                                        <h3>Casuela</h3>
-                                        <p>Casuela hecha por la abuela.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Gallery Item -->
-                            <div class="single_menu_item breakfast wow fadeInUp">
-                                <div class="d-sm-flex align-items-center">
-                                    <div class="dish-thumb">
-                                        <img src="img/Token/Token_Chilenito.png" alt=""
-                                            style="width: 100%; max-width: 400px;">
-                                    </div>
-                                    <div class="dish-description">
-                                        <h3>Chilenito</h3>
-                                        <p>Galleta crujiente de manjar con coco rallado.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Gallery Item -->
-                            <div class="single_menu_item breakfast wow fadeInUp">
-                                <a href="CHI_Terremoto.html">
-                                    <div class="d-sm-flex align-items-center">
-                                        <div class="dish-thumb">
-                                            <img src="img/Token/Token_Terremoto.png" alt=""
-                                                style="width: 100%; max-width: 400px;">
-                                        </div>
-                                        <div class="dish-description">
-                                            <h3>Terremoto</h3>
-                                            <p>Bebida festiva Chilena con helado de piña y granadina</p>
+                                            </a>
                                         </div>
                                     </div>
-                                </a>
-                            </div>
 
+                                </div>
 
+                            </div>
+                            <!-- Single Gallery Item -->
+                            <div class="single_menu_item breakfast wow fadeInUp">
+                                <div class="d-sm-flex align-items-center">
+                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
+                                        <img src="img//Token/Token_Chilenito.png" alt="" style="min-width: 300px;">
+                                        <div class="dish-info">
+                                            <h6 class="dish-name">Chilenito</h6>
+
+                                            <div class="popup" onclick="myFunction2()">
+                                                <p class="dish-price">Desc</p>
+                                                <span class="popuptext" id="myPopup2">Galleta crujiente de manjar con
+                                                    coco rallado.</span>
+                                            </div>
+
+                                            <a href="CHI_Chilenito.html">
+                                                <p class="dish-price">Ver</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- Single Gallery Item -->
+                            <div class="single_menu_item breakfast wow fadeInUp">
+                                <div class="d-sm-flex align-items-center">
+                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
+                                        <img src="img//Token/Token_Terremoto.png" alt="" style="min-width: 300px;">
+                                        <div class="dish-info">
+                                            <h6 class="dish-name">Terremoto</h6>
+
+                                            <div class="popup" onclick="myFunction3()">
+                                                <p class="dish-price">Desc</p>
+                                                <span class="popuptext" id="myPopup3">Bebida festiva Chilena con helado
+                                                    de piña y granadina.</span>
+                                            </div>
+
+                                            <a href="CHI_Terremoto.html">
+                                                <p class="dish-price">Ver</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
 
                         </div>
 
@@ -231,7 +216,7 @@
                         <img src="img/Token/Token_Completo.png" alt="">
                         <div class="dish-info">
                             <h6 class="dish-name">Completo</h6>
-                            <a href="ChileCompleto.html">
+                            <a href="CHI_Completo.html">
                                 <p class="dish-price">Ver</p>
                             </a>
                         </div>
@@ -239,19 +224,23 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-4">
                     <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
-                        <img src="img//Token/Token_Casuela.png" alt="">
+                        <img src="img//Token/Token_Chilenito.png" alt="">
                         <div class="dish-info">
-                            <h6 class="dish-name">Casuela</h6>
-                            <p class="dish-price">Ver</p>
+                            <h6 class="dish-name">Chilenito</h6>
+                            <a href="CHI_Chilenito.html">
+                                <p class="dish-price">Ver</p>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4">
                     <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1.5s">
-                        <img src="img/menu-img/dish-3.png" alt="">
+                        <img src="img/Token/Token_Terremoto.png" alt="">
                         <div class="dish-info">
-                            <h6 class="dish-name">Lorem Ipsum Dolor Sit Amet</h6>
-                            <p class="dish-price">$45</p>
+                            <h6 class="dish-name">Terremoto</h6>
+                            <a href="CHI_Terremoto.html">
+                                <p class="dish-price">Ver</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -291,4 +280,22 @@
     <script src="js/others/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+    <!--Popup-->
+    <script>
+        // When the user clicks on div, open the popup
+        function myFunction1() {
+            var popup = document.getElementById("myPopup1");
+            popup.classList.toggle("show");
+        }
+        // When the user clicks on div, open the popup
+        function myFunction2() {
+            var popup = document.getElementById("myPopup2");
+            popup.classList.toggle("show");
+        }
+        // When the user clicks on div, open the popup
+        function myFunction3() {
+            var popup = document.getElementById("myPopup3");
+            popup.classList.toggle("show");
+        }
+    </script>
 </body>
