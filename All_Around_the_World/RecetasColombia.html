@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>All Around The World - Ecuador | Menu</title>
+    <title>All Around The World - Colombia</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/cocinero.png">
@@ -19,6 +19,9 @@
 
     <!-- Responsive CSS -->
     <link href="css/responsive/responsive.css" rel="stylesheet">
+
+    <!--Popup-->
+    <link rel="stylesheet" href="css/popup.css" rel="stylesheet">
 
 </head>
 
@@ -64,7 +67,8 @@
                         <div class="collapse navbar-collapse" id="caviarNav">
                             <ul class="navbar-nav ml-auto" id="caviarMenu">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="menu.html">Inicio <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="menu.html">Inicio <span
+                                            class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item dropdown">
                                 <li class="nav-item">
@@ -116,85 +120,116 @@
                     <div>
 
                         <div class="caviar-portfolio clearfix">
-                            <!-- Single Gallery Item -->
-                            <div class="single_menu_item breakfast wow fadeInUp">
-                                <a href="COL_Albondigon_Colombiano.html">
-                                    <div class="d-sm-flex align-items-center">
-                                        <div class="dish-thumb">
 
-                                            <img src="img/imgColombia/ALBON.png" alt="No hay imagen"
-                                                style="width: 100%; max-width: 280px;">
-                                        </div>
 
-                                        <div class="dish-description">
-                                            <h3>Albondigon Colombiano</h3>
-                                            <p>El albondigon colombiano es un plato tradicional el cual se suele hacer en fiestas, al mismo tiempo es un plato ideal para celebrar un aniversario o cualquier festividad.</p>
+                            <!-- Single Gallery Item -->
+                            <div class="single_menu_item breakfast wow fadeInUp">
+                                <div class="d-sm-flex align-items-center">
+                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
+                                        <img src="img/imgColombia/ALBON.png" alt="" style="min-width: 300px;">
+                                        <div class="dish-info">
+                                            <h6 class="dish-name">Albondigon Colombiano</h6>
+                                            <div class="popup" onclick="myFunction1()">
+                                                <p class="dish-price">Desc</p>
+                                                <span class="popuptext" id="myPopup1">El albondigon colombiano es un plato tradicional el cual se suele hacer en fiestas, al mismo tiempo es un plato ideal para celebrar un aniversario o cualquier festividad.
+                                                </span>
+                                            </div>
+                                            <a href="COL_Albondigon_Colombiano.html">
+                                                <p class="dish-price">Ver</p>
+                                            </a>
                                         </div>
                                     </div>
-                                </a>
+
+                                </div>
 
                             </div>
+
                             <!-- Single Gallery Item -->
                             <div class="single_menu_item breakfast wow fadeInUp">
-                                <a href="COL_Garbanzos_con_carne_desmechada.html">
-                                    <div class="d-sm-flex align-items-center">
-                                        <div class="dish-thumb">
-                                            <img src="img/imgColombia/garbanzos.png" alt=""
-                                                style="width: 100%; max-width: 180px;">
-                                        </div>
-                                        <div class="dish-description">
-                                            <h3>Garbanzos con carne desmechada</h3>
-                                            <p>Una receta típica la cual trae dos ingredientes los cuales combinan bien los cuales son la carne desmechada y los garbanzos.</p>
+                                <div class="d-sm-flex align-items-center">
+                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
+                                        <img src="img/imgColombia/garbanzos.png" alt="" style="min-width: 300px;">
+                                        <div class="dish-info">
+                                            <h6 class="dish-name">Garbanzos con carne</h6>
+                                            <div class="popup" onclick="myFunction2()">
+                                                <p class="dish-price">Desc</p>
+                                                <span class="popuptext" id="myPopup2">Una receta típica la cual trae dos ingredientes los cuales combinan bien los cuales son la carne desmechada y los garbanzos.
+                                                </span>
+                                            </div>
+                                            <a href="COL_Garbanzos_con_carne_desmechada.html">
+                                                <p class="dish-price">Ver</p>
+                                            </a>
                                         </div>
                                     </div>
-                                </a>
+
+                                </div>
+
                             </div>
+
                             <!-- Single Gallery Item -->
                             <div class="single_menu_item breakfast wow fadeInUp">
-                                <a href="COL_Mantecada_de_chocolate.html">
-                                    <div class="d-sm-flex align-items-center">
-                                        <div class="dish-thumb">
-                                            <img src="img/imgColombia/mantecada.png" alt=""
-                                                style="width: 100%; max-width: 500px;">
-                                        </div>
-                                        <div class="dish-description">
-                                            <h3>Mantecada de chocolate</h3>
-                                            <p>La mantecada colombiana es un postre tradicional de la gastronomía de Colombia. Este bizcocho se diferencia de otros por el uso de harina de maíz amarilla y ron blanco o aguardiente.</p>
+                                <div class="d-sm-flex align-items-center">
+                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
+                                        <img src="img/imgColombia/mantecada.png" alt="" style="min-width: 300px;">
+                                        <div class="dish-info">
+                                            <h6 class="dish-name">Mantecada</h6>
+                                            <div class="popup" onclick="myFunction3()">
+                                                <p class="dish-price">Desc</p>
+                                                <span class="popuptext" id="myPopup3">La mantecada colombiana es un postre tradicional de la gastronomía de Colombia. Este bizcocho se diferencia de otros por el uso de harina de maíz amarilla y ron blanco o aguardiente.
+                                                </span>
+                                            </div>
+                                            <a href="COL_Mantecada_de_chocolate.html">
+                                                <p class="dish-price">Ver</p>
+                                            </a>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
+
+
                             <!-- Single Gallery Item -->
                             <div class="single_menu_item breakfast wow fadeInUp">
-                                <a href="COL_maracuyá_con_galletas_Ducales.html">
-                                    <div class="d-sm-flex align-items-center">
-                                        <div class="dish-thumb">
-                                            <img src="img/imgColombia/maracuya.png" alt=""
-                                                style="width: 100%; max-width: 400px;">
-                                        </div>
-                                        <div class="dish-description">
-                                            <h3>Maracuyá con galletas ducales</h3>
-                                            <p>te traemos un mágico postre de maracuyá con el toque secreto para que sorprendas a tu familia y amigos, ideal para una tarde de té y postre o para endulzar un almuerzo.</p>
+                                <div class="d-sm-flex align-items-center">
+                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
+                                        <img src="img/imgColombia/maracuya.png" alt="" style="min-width: 300px;">
+                                        <div class="dish-info">
+                                            <h6 class="dish-name">Maracuyá con galletas</h6>
+                                            <div class="popup" onclick="myFunction4()">
+                                                <p class="dish-price">Desc</p>
+                                                <span class="popuptext" id="myPopup4">Te traemos un mágico postre de maracuyá con el toque secreto para que sorprendas a tu familia y amigos, ideal para una tarde de té y postre o para endulzar un almuerzo.
+                                                </span>
+                                            </div>
+                                            <a href="COL_maracuyá_con_galletas_Ducales.html">
+                                                <p class="dish-price">Ver</p>
+                                            </a>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
+
                             <!-- Single Gallery Item -->
                             <div class="single_menu_item breakfast wow fadeInUp">
-                                <a href="COL_Pollo_con_hogao.html">
-                                    <div class="d-sm-flex align-items-center">
-                                        <div class="dish-thumb">
-                                            <img src="img/imgColombia/pollo.png" alt=""
-                                                style="width: 100%; max-width: 180px;">
-                                        </div>
-                                        <div class="dish-description">
-                                            <h3>Pollo con hogao</h3>
-                                            <p>prepararemos un pollo con hogao a base de leche de coco para dar un toque de sabor auténtico y único a la preparación.</p>
+                                <div class="d-sm-flex align-items-center">
+                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
+                                        <img src="img/imgColombia/pollo.png" alt="" style="min-width: 300px;">
+                                        <div class="dish-info">
+                                            <h6 class="dish-name">Pollo con hogao</h6>
+                                            <div class="popup" onclick="myFunction4()">
+                                                <p class="dish-price">Desc</p>
+                                                <span class="popuptext" id="myPopup4">Prepararemos un pollo con hogao a base de leche de coco para dar un toque de sabor auténtico y único a la preparación.
+                                                </span>
+                                            </div>
+                                            <a href="COL_Pollo_con_hogao.html">
+                                                <p class="dish-price">Ver</p>
+                                            </a>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
-                        </div>
+
+
+
+
                     </div>
                 </div>
             </div>
@@ -213,7 +248,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-sm-6 col-md-4">
+                <div class="col-12 col-sm-12 col-md-4">
                     <div class="caviar-single-dish wow fadeInUp" data-wow-delay="0.5s">
                         <img src="img/imgColombia/maracuya.png" alt="">
                         <div class="dish-info">
@@ -260,7 +295,9 @@
                         <a href="index.html" class="navbar-brand">All Around The World</a>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         <p>Copyright &copy;
-                            <script>document.write(new Date().getFullYear());</script> All rights reserved 
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                            template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+                                href="https://colorlib.com" target="_blank">Colorlib</a>
                         </p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
@@ -280,4 +317,33 @@
     <script src="js/others/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+    <!--Popup-->
+    <script>
+        // When the user clicks on div, open the popup
+        function myFunction1() {
+            var popup = document.getElementById("myPopup1");
+            popup.classList.toggle("show");
+        }
+        // When the user clicks on div, open the popup
+        function myFunction2() {
+            var popup = document.getElementById("myPopup2");
+            popup.classList.toggle("show");
+        }
+        // When the user clicks on div, open the popup
+        function myFunction3() {
+            var popup = document.getElementById("myPopup3");
+            popup.classList.toggle("show");
+        }
+        // When the user clicks on div, open the popup
+        function myFunction4() {
+            var popup = document.getElementById("myPopup4");
+            popup.classList.toggle("show");
+        }
+        // When the user clicks on div, open the popup
+        function myFunction5() {
+            var popup = document.getElementById("myPopup5");
+            popup.classList.toggle("show");
+        }
+    </script>
+
 </body>
