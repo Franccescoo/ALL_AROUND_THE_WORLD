@@ -20,6 +20,8 @@
     <!-- Responsive CSS -->
     <link href="css/responsive/responsive.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
 </head>
 
 <body>
@@ -39,7 +41,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="search-close-btn" id="closeBtn">
-                        <i class="pe-7s-close-circle" aria-hidden="true"></i>
+                        <i class="fa-solid fa-bars"></i>
                     </div>
                     <form action="#" method="get">
                         <input type="search" name="caviarSearch" id="search" placeholder="Search Your Favourite Dish ...">
@@ -78,10 +80,23 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="contact.html">Contacto</a>
                                 </li>
+                                <li class="nav-item dropdown active show">
+                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa-solid fa-user"></i>  Mi Cuenta</a>
+                                    <div class="dropdown-menu show" aria-labelledby="navbarDropdown">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12"><a class="dropdown-item" href="Login.html">Iniciar Sesión</a></div>
+                                                <div class="col-md-12"><a class="dropdown-item" href="#">Regristarse</a></div>
+                                                <div class="col-md-12"><a class="dropdown-item" href="#">Mi Perfil</a></div>
+                                                <div class="col-md-12"><a class="dropdown-item" href="#">Mis Recetas</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                             <!-- Search Btn -->
                             <div class="caviar-search-btn">
-                                <a id="search-btn" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                                <a id="search-btn" href="#"><i class="fa-bars:before" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </nav>
@@ -95,9 +110,9 @@
     <section class="caviar-hero-area" id="home">
         <!-- Welcome Social Info -->
         <div class="welcome-social-info">
-            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.twitter.com"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
         </div>
         <!-- Welcome Slides -->
         <div class="caviar-hero-slides owl-carousel">
@@ -181,10 +196,10 @@
             <div class="row">
                 <div class="col-12 menu-heading">
                     <div class="section-heading text-center">
-                        <h2>Países más valorados</h2>
+
                     </div>
                     <!-- btn -->
-                    <a href="menu.html" class="btn caviar-btn"><span></span> Ver los Países</a>
+                    <a href="menu.html" class="btn caviar-btn"><span></span>Ver los Países</a>
                 </div>
             </div>
             <div class="row">

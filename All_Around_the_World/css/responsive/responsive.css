@@ -254,3 +254,12 @@
         margin: 0 7.5px
     }
 }
+/*
+@media screen and (max-width: 575px){
+.caviar-btn{
+    float: none;
+    width: 50%;
+    margin-top: 40%;
+    margin-right: 25%;
+}
+}

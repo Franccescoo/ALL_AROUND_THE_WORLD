@@ -20,6 +20,8 @@
     <!-- Responsive CSS -->
     <link href="css/responsive/responsive.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/Usuario.css">
+
 </head>
 
 <body>
@@ -60,11 +62,11 @@
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#caviarNav" aria-controls="caviarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
                         <div class="collapse navbar-collapse" id="caviarNav">
                             <ul class="navbar-nav ml-auto" id="caviarMenu">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Inicio</a>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#home">Inicio <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="menu.html">Países</a>
+                                    <a class="nav-link" href="menu.html">Paises</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="contact.html">Contacto</a>
@@ -88,9 +90,7 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="breadcumb-content">
-                        <h2>Iniciar Sesión</h2>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+1234567890">+569 79066489</a> <a href="tel:+1234567890">+569 34334614</a></p>
-                        <p><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:someone@yoursite.com">Allroundtheworld@gmail.com</a></p>
+                        <h2>Usuario</h2>
                     </div>
                 </div>
             </div>
@@ -99,32 +99,22 @@
     <!-- ***** Breadcumb Area End ***** -->
 
     <!-- ***** Contact Area Start ***** -->
-    <div class="caviar-contact-area d-md-flex align-items-center" id="contact">
-        <div class="contact-form-area d-flex justify-content-end">
-            <div class="contact-form">
-                <div class="contact-form-title">
-                    <p style="margin-top: 20px;">Iniciar Sesión</p>
-                </div>
-                <form action="#">
-                    <div class="row">
-                        <div class="col-12">
-                            <p>Nombre de Usuario</p>
-                            <input type="text" class="form-control" placeholder="Su nombre">
-                        </div>
-                        <div class="col-12">
-                            <p>Contraseña</p>
-                            <input type="email" class="form-control" placeholder="Su contraseña">
-                        </div>
-                        <div class="col-12">
-                            <a href="Vista_de_Usuario.html" type="submit" class="btn caviar-btn" style="margin-bottom: 20px;"><span></span>Inicia Sesión
-                            </a>
-                        </div>
-                    </div>
-                </form>
-            </div>
+
+    <h1 class="Title">Mi Cuenta</h1>
+
+    <div class="vertical-menu">
+        <div class="row">
+            <div class="col"><a href="#" class="active">Perfil</a></div>
+            <div class="col"><a href="#">Ver Recetas</a></div>
+            <div class="col"><a href="#">Subir Receta</a></div>
+            <div class="col"><a href="#">Eliminar Receta</a></div>
+            <div class="col"><a href="#">Cerrar Sesión</a></div>
         </div>
     </div>
+
     
+    <h1 class="circulo"></h1>
+
     <!-- ***** Contact Area End ***** -->
 
     <!-- ***** Footer Area Start ***** -->
@@ -135,7 +125,7 @@
                     <div class="footer-text">
                         <a href="#" class="navbar-brand">All Around The World</a>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</p>
+                        <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
                 </div>
