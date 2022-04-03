@@ -463,11 +463,13 @@ li {
 .bg-img {
     background-position: center center;
     background-size: cover;
+    
 }
 
 .bg-overlay {
     position: relative;
     z-index: 1;
+    
 }
 
 .bg-overlay:after {
@@ -1072,7 +1074,7 @@ li {
 .breadcumb-area {
     position: relative;
     z-index: 1;
-    height: 555px;
+    height: 400px;
 }
 
 .breadcumb-content {

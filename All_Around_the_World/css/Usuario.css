@@ -32,14 +32,34 @@
 }
 
 .circulo {
-    position: absolute;
+    text-align: center;
     width: 300px;
     height: 300px;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    background: #5cb85c;
+    background-image: url(../img/Token/pngwing.com.png);
     margin: 5px;
-    right: 880px;
-    top: 600px;
+    background-size: 100% 100%;
+
+}
+
+.foto_perfil{
+  width:20% ;
+  height:100 ;
+  border-radius: 10%;
+}
+
+.perfil{
+  width:20% ;
+  height:100 ;
+  border-radius: 10%;
+}
+
+#texto{
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  font-size: 60px;
+  padding-left: 1em;
 }
