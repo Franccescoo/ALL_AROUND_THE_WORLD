@@ -20,6 +20,10 @@
     <!-- Responsive CSS -->
     <link href="css/responsive/responsive.css" rel="stylesheet">
 
+    <!--Popup-->
+    <link rel="stylesheet" href="css/popup.css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -64,7 +68,8 @@
                         <div class="collapse navbar-collapse" id="caviarNav">
                             <ul class="navbar-nav ml-auto" id="caviarMenu">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="menu.html">Inicio <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="menu.html">Inicio <span
+                                            class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item dropdown">
                                 <li class="nav-item">
@@ -116,70 +121,95 @@
                     <div>
 
                         <div class="caviar-portfolio clearfix">
-                            <!-- Single Gallery Item -->
-                            <div class="single_menu_item breakfast wow fadeInUp">
-                                <a href="Feijoada.html">
-                                    <div class="d-sm-flex align-items-center">
-                                        <div class="dish-thumb">
 
-                                            <img src="img/imgBrasil/feijoada.png" alt="No hay imagen"
-                                                style="width: 100%;">
+                            <!-- Single Gallery Item -->
+                            <div class="single_menu_item breakfast wow fadeInUp">
+                                <div class="d-sm-flex align-items-center">
+                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
+                                        <img src="img/imgBrasil/feijoada.png" alt="" style="min-width: 300px;">
+                                        <div class="dish-info">
+                                            <h6 class="dish-name">Feijoada</h6>
+                                            <div class="popup" onclick="myFunction1()">
+                                                <p class="dish-price">Desc</p>
+                                                <span class="popuptext" id="myPopup1">La feijoada es uno de los platos
+                                                    típicos de la cocina brasileña, de la
+                                                    gastronomía de Portugal y también muy común en Mozambique y Angola.
+                                                </span>
+                                            </div>
+                                            <a href="Feijoada.html">
+                                                <p class="dish-price">Ver</p>
+                                            </a>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Gallery Item -->
+                            <div class="single_menu_item breakfast wow fadeInUp">
+                                <div class="d-sm-flex align-items-center">
+                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
+                                        <img src="img/imgBrasil/Acaraje.png" alt="" style="min-width: 300px;">
+                                        <div class="dish-info">
+                                            <h6 class="dish-name">Acarajé</h6>
+                                            <div class="popup" onclick="myFunction2()">
+                                                <p class="dish-price">Desc</p>
+                                                <span class="popuptext" id="myPopup2">Es una especie de bollo elaborado
+                                                    con una masa de judías carillas y
+                                                    camarones, frito en aceite de palma, y servido en una salsa de
+                                                    pimienta,
+                                                    vatapá y caruru.
+                                                </span>
+                                            </div>
+                                            <a href="BrasilAcaraje.html">
+                                                <p class="dish-price">Ver</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                                        <div class="dish-description">
-                                            <h3>Feijoada</h3>
-                                            <p>La feijoada es uno de los platos típicos de la cocina brasileña, de la gastronomía de Portugal y también muy común en Mozambique y Angola.</p>
+                            <!-- Single Gallery Item -->
+                            <div class="single_menu_item breakfast wow fadeInUp">
+                                <div class="d-sm-flex align-items-center">
+                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
+                                        <img src="img/imgBrasil/caipirinha.png" alt="" style="min-width: 300px;">
+                                        <div class="dish-info">
+                                            <h6 class="dish-name">Caipiriña</h6>
+                                            <div class="popup" onclick="myFunction3()">
+                                                <p class="dish-price">Desc</p>
+                                                <span class="popuptext" id="myPopup3">Caipiriña es una bebida brasileña
+                                                    clasificada como un cóctel. Su
+                                                    ingrediente principal es la cachaça, pero también lleva lima o limón
+                                                    sutil.
+                                                </span>
+                                            </div>
+                                            <a href="BrasilCaipirina.html">
+                                                <p class="dish-price">Ver</p>
+                                            </a>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
+                            </div>
+                            <!-- Single Gallery Item -->
+                            <div class="single_menu_item breakfast wow fadeInUp">
+                                <div class="d-sm-flex align-items-center">
+                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
+                                        <img src="img/imgBrasil/vatapa.png" alt="" style="min-width: 300px;">
+                                        <div class="dish-info">
+                                            <h6 class="dish-name">Vatapá</h6>
+                                            <div class="popup" onclick="myFunction4()">
+                                                <p class="dish-price">Desc</p>
+                                                <span class="popuptext" id="myPopup4">Se elabora con pan o harina, jengibre, pimenta-malagueta, cacahuate,
+                                                    leche de coco, aceite de palma y cebolla.
+                                                </span>
+                                            </div>
+                                            <a href="BrasilVatapa.html">
+                                                <p class="dish-price">Ver</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                            </div>
-                            <!-- Single Gallery Item -->
-                            <div class="single_menu_item breakfast wow fadeInUp">
-                                <a href="BrasilAcaraje.html">
-                                    <div class="d-sm-flex align-items-center">
-                                        <div class="dish-thumb">
-                                            <img src="img/imgBrasil/Acaraje.png" alt=""
-                                                style="width: 100%; max-width: 400px;">
-                                        </div>
-                                        <div class="dish-description">
-                                            <h3>Acarajé</h3>
-                                            <p> Es una especie de bollo elaborado con una masa de judías carillas y camarones, frito en aceite de palma, y servido en una salsa de pimienta, vatapá y caruru.</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- Single Gallery Item -->
-                            <div class="single_menu_item breakfast wow fadeInUp">
-                                <a href="BrasilCaipirina.html">
-                                    <div class="d-sm-flex align-items-center">
-                                        <div class="dish-thumb">
-                                            <img src="img/imgBrasil/caipirinha.png" alt=""
-                                                style="width: 100%;">
-                                        </div>
-                                        <div class="dish-description">
-                                            <h3>Caipiriña</h3>
-                                            <p>Caipiriña es una bebida brasileña clasificada como un cóctel. Su ingrediente principal es la cachaça, pero también lleva lima o limón sutil.</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- Single Gallery Item -->
-                            <div class="single_menu_item breakfast wow fadeInUp">
-                                <a href="BrasilVatapa.html">
-                                    <div class="d-sm-flex align-items-center">
-                                        <div class="dish-thumb">
-                                            <img src="img/imgBrasil/vatapa.png" alt=""
-                                                style="width: 100%; max-width: 220px;">
-                                        </div>
-                                        <div class="dish-description">
-                                            <h3>Vatapá</h3>
-                                            <p>Se elabora con pan o harina, jengibre, pimenta-malagueta, cacahuate, leche de coco, aceite de palma y cebolla.</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- Single Gallery Item -->
                         </div>
                     </div>
                 </div>
@@ -199,7 +229,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-sm-6 col-md-4">
+                <div class="col-12 col-sm-12 col-md-4">
                     <div class="caviar-single-dish wow fadeInUp" data-wow-delay="0.5s">
                         <img src="img/imgBrasil/caipirinha.png" alt="">
                         <div class="dish-info">
@@ -246,7 +276,7 @@
                         <a href="index.html" class="navbar-brand">All Around The World</a>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         <p>Copyright &copy;
-                            <script>document.write(new Date().getFullYear());</script> All rights reserved 
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved
                         </p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
@@ -266,4 +296,28 @@
     <script src="js/others/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+    <!--Popup-->
+    <script>
+        // When the user clicks on div, open the popup
+        function myFunction1() {
+            var popup = document.getElementById("myPopup1");
+            popup.classList.toggle("show");
+        }
+        // When the user clicks on div, open the popup
+        function myFunction2() {
+            var popup = document.getElementById("myPopup2");
+            popup.classList.toggle("show");
+        }
+        // When the user clicks on div, open the popup
+        function myFunction3() {
+            var popup = document.getElementById("myPopup3");
+            popup.classList.toggle("show");
+        }
+        // When the user clicks on div, open the popup
+        function myFunction4() {
+            var popup = document.getElementById("myPopup4");
+            popup.classList.toggle("show");
+        }
+    </script>
+
 </body>
