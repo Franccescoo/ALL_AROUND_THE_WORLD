@@ -19,6 +19,9 @@
 
     <!-- Responsive CSS -->
     <link href="css/responsive/responsive.css" rel="stylesheet">
+    <!--Popup-->
+    <link rel="stylesheet" href="css/popup.css" rel="stylesheet">
+
 
 </head>
 
@@ -64,7 +67,8 @@
                         <div class="collapse navbar-collapse" id="caviarNav">
                             <ul class="navbar-nav ml-auto" id="caviarMenu">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="menu.html">Inicio <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="menu.html">Inicio <span
+                                            class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item dropdown">
                                 <li class="nav-item">
@@ -116,70 +120,94 @@
                     <div>
 
                         <div class="caviar-portfolio clearfix">
-                            <!-- Single Gallery Item -->
-                            <div class="single_menu_item breakfast wow fadeInUp">
-                                <a href="VenePabellon.html">
-                                    <div class="d-sm-flex align-items-center">
-                                        <div class="dish-thumb">
 
-                                            <img src="img/imgVenezuela/pabellon1.png" alt="No hay imagen"
-                                                style="width: 100%;">
+                            <!-- Single Gallery Item -->
+                            <div class="single_menu_item breakfast wow fadeInUp">
+                                <div class="d-sm-flex align-items-center">
+                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
+                                        <img src="img/imgVenezuela/pabellon1.png" alt="" style="min-width: 300px;">
+                                        <div class="dish-info">
+                                            <h6 class="dish-name">Pabellón criollo</h6>
+                                            <div class="popup" onclick="myFunction1()">
+                                                <p class="dish-price">Desc</p>
+                                                <span class="popuptext" id="myPopup1">El pabellón criollo es un plato
+                                                    tradicional de Venezuela reconocido como
+                                                    el plato nacional por excelencia gastronomía venezolana.
+                                                </span>
+                                            </div>
+                                            <a href="VenePabellon.html">
+                                                <p class="dish-price">Ver</p>
+                                            </a>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Gallery Item -->
+                            <div class="single_menu_item breakfast wow fadeInUp">
+                                <div class="d-sm-flex align-items-center">
+                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
+                                        <img src="img/imgVenezuela/arepa.png" alt="" style="min-width: 300px;">
+                                        <div class="dish-info">
+                                            <h6 class="dish-name">Arepa</h6>
+                                            <div class="popup" onclick="myFunction2()">
+                                                <p class="dish-price">Desc</p>
+                                                <span class="popuptext" id="myPopup2">La arepa es un alimento de origen
+                                                    precolombino, hecho a base de masa de
+                                                    maíz seco molido o de harina de maíz precocida.
+                                                </span>
+                                            </div>
+                                            <a href="VeneArepa.html">
+                                                <p class="dish-price">Ver</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Gallery Item -->
+                            <div class="single_menu_item breakfast wow fadeInUp">
+                                <div class="d-sm-flex align-items-center">
+                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
+                                        <img src="img/imgVenezuela/asado_negro.png" alt="" style="min-width: 300px;">
+                                        <div class="dish-info">
+                                            <h6 class="dish-name">Asado Negro</h6>
+                                            <div class="popup" onclick="myFunction3()">
+                                                <p class="dish-price">Desc</p>
+                                                <span class="popuptext" id="myPopup3">El plato consiste en un corte de
+                                                    carne con forma cilíndrica, extraído de
+                                                    la parte trasera de la res; que se prepara con especias y papelón.
+                                                </span>
+                                            </div>
+                                            <a href="VeneAsado.html">
+                                                <p class="dish-price">Ver</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Gallery Item -->
+                            <div class="single_menu_item breakfast wow fadeInUp">
+                                <div class="d-sm-flex align-items-center">
+                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
+                                        <img src="img/imgVenezuela/bollon.png" alt="" style="min-width: 300px;">
+                                        <div class="dish-info">
+                                            <h6 class="dish-name">Bollo pelón</h6>
+                                            <div class="popup" onclick="myFunction4()">
+                                                <p class="dish-price">Desc</p>
+                                                <span class="popuptext" id="myPopup4">El bollo pelón es un plato típico de la cocina venezolana que consiste en
+                                                    un bollito de masa de maíz relleno de guiso de carne o pollo
+                                                </span>
+                                            </div>
+                                            <a href="VeneBollon.html">
+                                                <p class="dish-price">Ver</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                                        <div class="dish-description">
-                                            <h3>Pabellón criollo</h3>
-                                            <p>El pabellón criollo es un plato tradicional de Venezuela reconocido como el plato nacional por excelencia gastronomía venezolana.</p>
-                                        </div>
-                                    </div>
-                                </a>
 
-                            </div>
-                            <!-- Single Gallery Item -->
-                            <div class="single_menu_item breakfast wow fadeInUp">
-                                <a href="VeneArepa.html">
-                                    <div class="d-sm-flex align-items-center">
-                                        <div class="dish-thumb">
-                                            <img src="img/imgVenezuela/arepa.png" alt=""
-                                                style="width: 100%; max-width: 220px;">
-                                        </div>
-                                        <div class="dish-description">
-                                            <h3>Arepa</h3>
-                                            <p>La arepa es un alimento de origen precolombino, hecho a base de masa de maíz seco molido o de harina de maíz precocida.</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- Single Gallery Item -->
-                            <div class="single_menu_item breakfast wow fadeInUp">
-                                <a href="VeneAsado.html">
-                                    <div class="d-sm-flex align-items-center">
-                                        <div class="dish-thumb">
-                                            <img src="img/imgVenezuela/asado_negro.png" alt=""
-                                                style="width: 100%;">
-                                        </div>
-                                        <div class="dish-description">
-                                            <h3>Asado Negro</h3>
-                                            <p>El plato consiste en un corte de carne con forma cilíndrica, extraído de la parte trasera de la res; que se prepara con especias y papelón.</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- Single Gallery Item -->
-                            <div class="single_menu_item breakfast wow fadeInUp">
-                                <a href="VeneBollon.html">
-                                    <div class="d-sm-flex align-items-center">
-                                        <div class="dish-thumb">
-                                            <img src="img/imgVenezuela/bollon.png" alt=""
-                                                style="width: 100%; max-width: 220px;">
-                                        </div>
-                                        <div class="dish-description">
-                                            <h3>Bollo pelón</h3>
-                                            <p>El bollo pelón es un plato típico de la cocina venezolana que consiste en un bollito de masa de maíz relleno de guiso de carne o pollo</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- Single Gallery Item -->
+
+                            
                         </div>
                     </div>
                 </div>
@@ -246,7 +274,7 @@
                         <a href="index.html" class="navbar-brand">All Around The World</a>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         <p>Copyright &copy;
-                            <script>document.write(new Date().getFullYear());</script> All rights reserved 
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved
                         </p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
@@ -266,4 +294,29 @@
     <script src="js/others/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+    <!--Popup-->
+    <script>
+        // When the user clicks on div, open the popup
+        function myFunction1() {
+            var popup = document.getElementById("myPopup1");
+            popup.classList.toggle("show");
+        }
+        // When the user clicks on div, open the popup
+        function myFunction2() {
+            var popup = document.getElementById("myPopup2");
+            popup.classList.toggle("show");
+        }
+        // When the user clicks on div, open the popup
+        function myFunction3() {
+            var popup = document.getElementById("myPopup3");
+            popup.classList.toggle("show");
+        }
+        // When the user clicks on div, open the popup
+        function myFunction4() {
+            var popup = document.getElementById("myPopup4");
+            popup.classList.toggle("show");
+        }
+    </script>
+
+
 </body>
