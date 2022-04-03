@@ -1,4 +1,5 @@
-r<!DOCTYPE html>
+r
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,6 +20,10 @@ r<!DOCTYPE html>
 
     <!-- Responsive CSS -->
     <link href="css/responsive/responsive.css" rel="stylesheet">
+
+    <!--Popup-->
+    <link rel="stylesheet" href="css/popup.css" rel="stylesheet">
+
 
 </head>
 
@@ -64,7 +69,8 @@ r<!DOCTYPE html>
                         <div class="collapse navbar-collapse" id="caviarNav">
                             <ul class="navbar-nav ml-auto" id="caviarMenu">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="menu.html">Inicio <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="menu.html">Inicio <span
+                                            class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item dropdown">
                                 <li class="nav-item">
@@ -87,7 +93,8 @@ r<!DOCTYPE html>
     <!-- ***** Header Area End ***** -->
 
     <!-- ***** Breadcumb Area Start ***** -->
-    <div class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/imgUruguay/Capeletis-a-la-Carusouruguay.jpg)">
+    <div class="breadcumb-area bg-img bg-overlay"
+        style="background-image: url(img/imgUruguay/Capeletis-a-la-Carusouruguay.jpg)">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">
@@ -116,72 +123,101 @@ r<!DOCTYPE html>
                     <div>
 
                         <div class="caviar-portfolio clearfix">
+
                             <!-- Single Gallery Item -->
                             <div class="single_menu_item breakfast wow fadeInUp">
-                                <a href="UruAsado.html">
-                                    <div class="d-sm-flex align-items-center">
-                                        <div class="dish-thumb">
-
-                                            <img src="img/imgUruguay/iconoasado.png" alt="No hay imagen"
-                                                style="width: 100%; max-width: 220px;">
+                                <div class="d-sm-flex align-items-center">
+                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
+                                        <img src="img/imgUruguay/iconoasado.png" alt="" style="min-width: 300px;">
+                                        <div class="dish-info">
+                                            <h6 class="dish-name">Asado</h6>
+                                            <div class="popup" onclick="myFunction1()">
+                                                <p class="dish-price">Desc</p>
+                                                <span class="popuptext" id="myPopup1">Cualquiera que ame la carne tanto como los uruguayos considerará el asado
+                                                    como el producto estrella de esta lista.
+                                                </span>
+                                            </div>
+                                            <a href="UruAsado.html">
+                                                <p class="dish-price">Ver</p>
+                                            </a>
                                         </div>
+                                    </div>
 
-                                        <div class="dish-description">
-                                            <h3>Asado</h3>
-                                            <p>Cualquiera que ame la carne tanto como los uruguayos considerará el asado como el producto estrella de esta lista.</p>
+                                </div>
+
+                            </div>
+
+                            <!-- Single Gallery Item -->
+                            <div class="single_menu_item breakfast wow fadeInUp">
+                                <div class="d-sm-flex align-items-center">
+                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
+                                        <img src="img/imgUruguay/iconocapeletis.png" alt="" style="min-width: 300px;">
+                                        <div class="dish-info">
+                                            <h6 class="dish-name">Capeletis a la Caruso</h6>
+                                            <div class="popup" onclick="myFunction2()">
+                                                <p class="dish-price">Desc</p>
+                                                <span class="popuptext" id="myPopup2">La pasta es uno de los platos más populares en Uruguay y el que rige las
+                                                    reuniones familiares todos los domingos
+                                                </span>
+                                            </div>
+                                            <a href="UruCapeletis.html">
+                                                <p class="dish-price">Ver</p>
+                                            </a>
                                         </div>
                                     </div>
-                                </a>
+
+                                </div>
 
                             </div>
+
                             <!-- Single Gallery Item -->
                             <div class="single_menu_item breakfast wow fadeInUp">
-                                <a href="UruCapeletis.html">
                                 <div class="d-sm-flex align-items-center">
-                                    <div class="dish-thumb">
-                                        <img src="img/imgUruguay/iconocapeletis.png" alt=""
-                                            style="width: 100%; max-width: 220px;">
+                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
+                                        <img src="img/imgUruguay/chivitoicons.png" alt="" style="min-width: 300px;">
+                                        <div class="dish-info">
+                                            <h6 class="dish-name">Chivito</h6>
+                                            <div class="popup" onclick="myFunction3()">
+                                                <p class="dish-price">Desc</p>
+                                                <span class="popuptext" id="myPopup3">Todo el mundo debería probar un chivito mientras esté en Uruguay. Aunque
+                                                    su nombre significa«cabra pequeña» en realidad no está hecha de
+                                                    carne de cabra.
+                                                </span>
+                                            </div>
+                                            <a href="UruChivito.html">
+                                                <p class="dish-price">Ver</p>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="dish-description">
-                                        <h3>Capeletis a la Caruso</h3>
-                                        <p>La pasta es uno de los platos más populares en Uruguay y el que rige las reuniones familiares todos los domingos</p>
-                                    </div>
+
                                 </div>
-                                </a>
+
                             </div>
+
                             <!-- Single Gallery Item -->
                             <div class="single_menu_item breakfast wow fadeInUp">
-                                <a href="UruChivito.html">
                                 <div class="d-sm-flex align-items-center">
-                                    <div class="dish-thumb">
-                                        <img src="img/imgUruguay/chivitoicons.png" alt=""
-                                            style="width: 100%; max-width: 220px;">
+                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
+                                        <img src="img/imgUruguay/chajaicon.png" alt="" style="min-width: 300px;">
+                                        <div class="dish-info">
+                                            <h6 class="dish-name">Chajá</h6>
+                                            <div class="popup" onclick="myFunction3()">
+                                                <p class="dish-price">Desc</p>
+                                                <span class="popuptext" id="myPopup3">El Chajá es un postre que se inventó en Uruguay, y aunque hoy en día la
+                                                    gente no lo come con frecuencia, es uno de los platos más
+                                                    tradicionales de Uruguay,
+                                                    favorecido entre las generaciones más antiguas
+                                                </span>
+                                            </div>
+                                            <a href="UruChaja.html">
+                                                <p class="dish-price">Ver</p>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="dish-description">
-                                        <h3>Chivito</h3>
-                                        <p>Todo el mundo debería probar un chivito mientras esté en Uruguay. Aunque su nombre significa«cabra pequeña»<br> en realidad no está hecha de carne de cabra.</p>
-                                    </div>
+
                                 </div>
-                            </a>
-                            
+
                             </div>
-                            <!-- Single Gallery Item -->
-                            <div class="single_menu_item breakfast wow fadeInUp">
-                                <a href="UruChaja.html">
-                                <div class="d-sm-flex align-items-center">
-                                    <div class="dish-thumb">
-                                        <img src="img/imgUruguay/chajaicon.png" alt=""
-                                            style="width: 100%; max-width: 220px;">
-                                    </div>
-                                    <div class="dish-description">
-                                        <h3>Chajá</h3>
-                                        <p>El Chajá es un postre que se inventó en Uruguay, y aunque hoy en día la gente no lo come con frecuencia, <BR>es uno de los platos más tradicionales de Uruguay,
-                                            favorecido entre las generaciones más antiguas</p>
-                                    </div>
-                                </div>
-                                </a>
-                            </div>
-                            <!-- Single Gallery Item -->
                         </div>
                     </div>
                 </div>
@@ -248,7 +284,7 @@ r<!DOCTYPE html>
                         <a href="index.html" class="navbar-brand">All Around The World</a>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         <p>Copyright &copy;
-                            <script>document.write(new Date().getFullYear());</script> All rights reserved 
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved
                         </p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
@@ -268,4 +304,29 @@ r<!DOCTYPE html>
     <script src="js/others/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+    <!--Popup-->
+    <script>
+        // When the user clicks on div, open the popup
+        function myFunction1() {
+            var popup = document.getElementById("myPopup1");
+            popup.classList.toggle("show");
+        }
+        // When the user clicks on div, open the popup
+        function myFunction2() {
+            var popup = document.getElementById("myPopup2");
+            popup.classList.toggle("show");
+        }
+        // When the user clicks on div, open the popup
+        function myFunction3() {
+            var popup = document.getElementById("myPopup3");
+            popup.classList.toggle("show");
+        }
+        // When the user clicks on div, open the popup
+        function myFunction4() {
+            var popup = document.getElementById("myPopup4");
+            popup.classList.toggle("show");
+        }
+    </script>
+
+
 </body>
