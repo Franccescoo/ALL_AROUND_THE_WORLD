@@ -19,7 +19,9 @@
 
     <!-- Responsive CSS -->
     <link href="css/responsive/responsive.css" rel="stylesheet">
-    
+
+    <link rel="stylesheet" href="css/Usuario.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
 </head>
@@ -62,28 +64,23 @@
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#caviarNav" aria-controls="caviarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
                         <div class="collapse navbar-collapse" id="caviarNav">
                             <ul class="navbar-nav ml-auto" id="caviarMenu">
-                                <li class="nav-item">
+                                <li class="nav-item ">
                                     <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="menu.html">Países</a>
+                                    <a class="nav-link" href="menu.html">Paises</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="contact.html">Contacto</a>
                                 </li>
-                                <li class="nav-item dropdown active show">
-                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa-solid fa-user"></i>  Mi Cuenta</a>
-                                    <div class="dropdown-menu show" aria-labelledby="navbarDropdown">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-md-12"><a class="dropdown-item" href="Login.html">Iniciar Sesión</a></div>
-                                                <div class="col-md-12"><a class="dropdown-item" href="registrarse.html">Registrarse</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Cerrar Sesion</a>
                                 </li>
                             </ul>
                             <!-- Search Btn -->
+                            <div class="caviar-search-btn">
+                                <a id="search-btn" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                            </div>
                         </div>
                     </nav>
                 </div>
@@ -96,12 +93,10 @@
     <div class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/hero-4.jpg)">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
-                <div class="col-12">
-                    <div class="breadcumb-content">
-                        <h2>Iniciar Sesión</h2>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+1234567890">+569 79066489</a> <a href="tel:+1234567890">+569 34334614</a></p>
-                        <p><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:someone@yoursite.com">Allroundtheworld@gmail.com</a></p>
-                    </div>
+                <div class="col-md-7 col-sm-12">
+                    <img class="perfil" src="img/Token/perfil.png" alt="">
+                    
+                    <p id="texto">Administrador</p>
                 </div>
             </div>
         </div>
@@ -109,34 +104,43 @@
     <!-- ***** Breadcumb Area End ***** -->
 
     <!-- ***** Contact Area Start ***** -->
-    <div class="caviar-contact-area d-md-flex align-items-center" id="contact">
+<div class="topnav">
+    <a href="Vista_de_Admin.html">Ver Perfil</a>
+    <a href="Ver_Receta_Admin.html">Ver Recetas</a>
+</div>
+    </div>
+
+        <div class="caviar-contact-area d-md-flex align-items-center" id="contact">
         <div class="contact-form-area d-flex justify-content-end">
             <div class="contact-form">
                 <div class="contact-form-title">
-                    <p style="margin-top: 20px;">Iniciar Sesión</p>
+                    <p style="margin-top: 20px;">Datos </p>
                 </div>
                 <form action="#">
                     <div class="row">
                         <div class="col-12">
-                            <p>Nombre de Usuario</p>
-                            <input type="text" class="form-control" placeholder="Su nombre">
+                            <p>Nombre(s): Administrador1</p>
+                            
                         </div>
                         <div class="col-12">
-                            <p>Contraseña</p>
-                            <input type="password" class="form-control" placeholder="Su contraseña">
+                            <p>Apellido(s): </p>
+
                         </div>
-                        <div class="col-6">
-                            <a href="Vista_de_Usuario.html" type="submit" class="btn caviar-btn" style="margin-bottom: 20px;"><span></span>Inicia Sesión</a>
+                        <div class="col-12">
+                            <p>Nombre de Usuario: Administrador</p>
+
                         </div>
-                        <div class="col-6">
-                            <a href="Vista_de_Admin.html" type="submit" class="btn caviar-btn" style="margin-bottom: 20px;"><span></span>Inicia como Admin</a>
+                        <div class="col-12">
+                            <p>Contraseña: ************</p>
+                        </div>
+                        <div class="col-12">
+                            <p>Email: Allroundtheworld@gmail.com</p>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    
     <!-- ***** Contact Area End ***** -->
 
     <!-- ***** Footer Area Start ***** -->
@@ -147,7 +151,7 @@
                     <div class="footer-text">
                         <a href="#" class="navbar-brand">All Around The World</a>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</p>
+                        <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
                 </div>
