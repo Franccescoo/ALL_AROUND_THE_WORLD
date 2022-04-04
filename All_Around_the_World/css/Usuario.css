@@ -64,6 +64,14 @@
   padding-left: 1em;
 }
 
+#texto_admin{
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  font-size: 50px;
+  padding-left: 1em;
+}
+
 .datos{
   position: relative;
   bottom: 300px;
