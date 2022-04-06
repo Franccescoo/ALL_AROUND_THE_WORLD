@@ -20,9 +20,6 @@
     <!-- Responsive CSS -->
     <link href="css/responsive/responsive.css" rel="stylesheet">
 
-    <!--Popup-->
-    <link rel="stylesheet" href="css/popup.css" rel="stylesheet">
-
     <link rel="stylesheet" href="css/Usuario.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -72,7 +69,8 @@
                         <div class="collapse navbar-collapse" id="caviarNav">
                             <ul class="navbar-nav ml-auto" id="caviarMenu">
                                 <li class="nav-item ">
-                                    <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="index.html">Inicio <span
+                                            class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item dropdown">
                                 <li class="nav-item">
@@ -97,7 +95,7 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="breadcumb-content">
-                        <h2>Mis Recetas</h2>
+                        <h2>Modificar Usuarios</h2>
                     </div>
                 </div>
             </div>
@@ -105,65 +103,58 @@
     </div>
     <!-- ***** Breadcumb Area End ***** -->
     <div class="topnav">
-        <a href="Vista_de_Usuario.html">Ver Perfil</a>
-        <a href="Ver_Receta_Usuario.html">Ver Recetas</a>
-        <a href="Creacion_Recetas.html">Subir Recetas</a>
+        <a href="Vista_de_Admin.html">Ver Perfil</a>
+        <a href="Ver_Receta_Admin.html">Ver Recetas</a>
+        <a href="Ver_Usuario_Admin.html">Ver Usuarios</a>
     </div>
 
-    <!-- ***** Menu Area Start ***** -->
-    <div class="caviar-food-menu section-padding-10 clearfix">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-12">
-                    <div class="caviar-projects-menu">
-                        <div class="text-center portfolio-menu">
-                            <button class="active" data-filter="*">Mis Recetas</button>
-                        </div>
-                    </div>
-
-                    <div>
-                        <!-- Single Gallery Item -->
-
-                        <div class="container" style="margin-bottom: 100px;">
-                            <div class="row">
-                                <div class="col-12 menu-heading">
-                                    <div class="section-heading text-center">
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-
-                                <!-- Single Gallery Item -->
-                            <div class="col-12 col-sm-12 col-md-4">
-                                <div class="caviar-single-dish wow fadeInUp" data-wow-delay="0.5s">
-                                    <img src="img//Token/Token_Completo.png" alt="Sin Imagen">
-                                    <div class="dish-info">
-                                        <h6 class="dish-name">Completo</h6>
-                                        <a href="Editar_Recetas.html">
-                                            <p class="dish-price">Editar</p>
-                                        </a>
-                                        <a href="Ver_Receta_Usuario.html">
-                                            <p class="dish-price" style="font-size: 12PX;">Eliminar</p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+    <!-- ***** Contact Area Start ***** -->
 
 
-
-                            </div>
-                        </div>
-                    </div>
+    <div class="caviar-contact-area d-md-flex align-items-center" id="contact">
+        <div class="contact-form-area d-flex justify-content-end">
+            <div class="contact-form">
+                <div class="contact-form-title">
+                    <p style="margin-top: 20px;">Datos </p>
                 </div>
+                <form action="#">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Nombre(s): Matias Ignacio</p>
+                            <input type="text" class="form-control" placeholder="Su nuevo nombre">
+                        </div>
+                        <div class="col-12">
+                            <p>Apellido(s): Peñaloza Jara</p>
+                            <input type="text" class="form-control" placeholder="Su nuevo apellido">
+                        </div>
+                        <div class="col-12">
+                            <p>Nombre de Usuario: Mattheus</p>
+                            <input type="text" class="form-control" placeholder="Su nuevo nombre de usuario">
+                        </div>
+                        <div class="col-12">
+                            <p>Contraseña: ************</p>
+                            <input type="text" class="form-control" placeholder="Su nueva contraseña">
+                        </div>
+                        <div class="col-12">
+                            <p>Email: matpenaloza@duocuc.cl</p>
+                            <input type="text" class="form-control" placeholder="Su nuevo email">
+                        </div>
+
+
+
+
+
+                        <div class="col-12">
+                            <a href="Ver_Usuario_Admin.html" type="submit" class="btn caviar-btn"
+                                style="margin-bottom: 20px;"><span></span>Modificar
+                            </a>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-    <!-- ***** Menu Area End ***** -->
-
-
-
+    <!-- ***** Contact Area End ***** -->
 
     <!-- ***** Special Menu Area Start ***** -->
 
@@ -181,12 +172,13 @@
                             <script>document.write(new Date().getFullYear());</script>
                         </p>
                         <p>
-                            Todos los derechos reservados</div>
-                        </p>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Todos los derechos reservados
                     </div>
+                    </p>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </div>
             </div>
+        </div>
         </div>
     </footer>
     <!-- ***** Footer Area Start ***** -->
@@ -202,33 +194,4 @@
     <!-- Active js -->
     <script src="js/active.js"></script>
 
-        <!--Popup-->
-        <script>
-            // When the user clicks on div, open the popup
-            function myFunction1() {
-                var popup = document.getElementById("myPopup1");
-                popup.classList.toggle("show");
-            }
-            // When the user clicks on div, open the popup
-            function myFunction2() {
-                var popup = document.getElementById("myPopup2");
-                popup.classList.toggle("show");
-            }
-            // When the user clicks on div, open the popup
-            function myFunction3() {
-                var popup = document.getElementById("myPopup3");
-                popup.classList.toggle("show");
-            }
-            // When the user clicks on div, open the popup
-            function myFunction4() {
-                var popup = document.getElementById("myPopup4");
-                popup.classList.toggle("show");
-            }
-            // When the user clicks on div, open the popup
-            function myFunction5() {
-                var popup = document.getElementById("myPopup5");
-                popup.classList.toggle("show");
-            }
-        </script>
-    
 </body>
