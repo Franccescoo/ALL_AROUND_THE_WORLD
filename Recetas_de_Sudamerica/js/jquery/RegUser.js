@@ -3,6 +3,8 @@ $(document).ready(function () {
     $("#formRegi").submit(function (e) {
         e.preventDefault();
         var nomb = $("#nomUser").val();
+        var pass1 = $("#password1").val();
+        var pass2 = $("#password2").val();
 
         let mensajeMostrar = "";
         let entrar = false;
@@ -18,6 +20,12 @@ $(document).ready(function () {
             mensajeMostrar += "La primera letra es minuscula<br>";
             entrar = true;
         }
+
+        if (pass1 != pass2){
+            mensajeMostrar += "Las contraseñas no coinciden<br>";
+            entrar = true;
+        }
+
 
         if(entrar){
             $("#mensajeReg").html(mensajeMostrar);
