@@ -2,37 +2,46 @@ $(document).ready(function () {
 
     $("#formRegi").submit(function (e) {
         e.preventDefault();
-        var nomb = $("#nomUser").val();
+        var nomb = $("#nickUserName").val();
         var pass1 = $("#password1").val();
         var pass2 = $("#password2").val();
 
         let mensajeMostrar = "";
-        let entrar = false;
+        let entrar = true;
 
-        if (nomb.length < 4 || nomb.length > 7) {
-            mensajeMostrar += "La longitud no es correcta<br>";
-            entrar = true;
+        
+        if (nomb.length < 4 || nomb.length > 10) {
+            mensajeMostrar += "La longitud del nombre de usuario no es adecuada, debe tener entre 4 y 10 caracteres<br>";
+            entrar = false;
         }
 
-
+        
         var PrimeraLetra = nomb.charAt(0);
         if (!esMayuscula(PrimeraLetra)) {
-            mensajeMostrar += "La primera letra es minuscula<br>";
-            entrar = true;
+            mensajeMostrar += "La primera letra del nombre de usuario debe ser mayuscula<br>";
+            entrar = false;
         }
+
+        var UltimoDigito = nomb.charAt(nomb.length-1);
+        if(isNaN(UltimoDigito)){
+            mensajeMostrar += "El ultimo digito del nombre de usuario debe ser un numero<br>";
+            entrar = false;
+        }
+        
 
         if (pass1 != pass2){
             mensajeMostrar += "Las contraseñas no coinciden<br>";
-            entrar = true;
+            entrar = false;
         }
 
 
         if(entrar){
-            $("#mensajeReg").html(mensajeMostrar);
+            $("#mensajeReg").html("Formulario Enviado");
+            
 
         }
         else{
-            $("#mensajeReg").html("Formulario Enviado");
+            $("#mensajeReg").html(mensajeMostrar);
         }
 
     });
