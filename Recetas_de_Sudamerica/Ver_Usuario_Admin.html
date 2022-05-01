@@ -31,7 +31,10 @@
                     $.each(data.results, function (i, item) {
                         //Mostrar la informacion de cada elemento de a lista en a tabla
                         $("#tabla").append("<tr><td>" + item.name.first +
+                            "</td><td>" + item.name.last +
                             "</td><td>" + item.email +
+                            "</td><td>" + item.login.username +
+                            "</td><td>" + item.login.password +
                             "</td><td>" + item.phone +
                             "</td><td>" + item.cell +
                             "</td></tr>");
@@ -162,8 +165,13 @@
                             <table id="tabla" class="table table-striped">
                                 <thead>
                                     <tr>
-                                        <th>Comida</th>
-                                        <th>Foto</th>
+                                        <th>Primer Nombre</th>
+                                        <th>Apellido</th>                                     
+                                        <th>email</th>
+                                        <th>Nombre de usuario   </th>
+                                        <th>Contraseña</th>
+                                        <th>Telefono</th>
+                                        <th>Celular</th>
                                     </tr>
                                 </thead>
             
