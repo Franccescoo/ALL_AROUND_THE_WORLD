@@ -131,19 +131,20 @@
                                 <div>
                                     <label for="imagen">Imagen(URL):</label>
                                 </div>
-                                <input type="text" id="imagen" name="imagen">
+                                <input type="text" id="imagen" placeholder="Ej: https://URL.jpg" name="imagen">
                             </div>
                             <div style="margin-bottom: 30px;">
                                 <div>
                                     <label for="nombreReceta">Nombre De La Receta:</label>
                                 </div>
-                                <input type="text" id="nombreReceta" name="nombreReceta" required>
+                                <input type="text" id="nombreReceta" name="nombreReceta" placeholder="Ej: Completo"
+                                    required>
                             </div>
                             <div style="margin-bottom: 30px;">
                                 <div>
                                     <label for="tiempo">Tiempo De Preparacion (minutos):</label>
                                 </div>
-                                <input type="number" id="tiempo" name="tiempo" required>
+                                <input type="number" id="tiempo" name="tiempo" placeholder="Ej: 15" required>
                             </div>
                             <div style="margin-bottom: 30px;">
                                 <label for="idTipoAlimento">Tipo De Alimento:</label>
@@ -190,6 +191,11 @@
                                         <label for="ingredientes">Ingredientes:</label>
                                     </div>
                                     <textarea id="ingredientes" name="ingredientes" rows="5" cols="40"
+                                    placeholder="EJ: 1 Camello. 
+ 10 oregano. 
+ 1 litro de aceite. 
+ 3 calamares. 
+ 2 pepinos."
                                         required></textarea>
                                 </div>
 
@@ -197,8 +203,10 @@
                                     <div>
                                         <label for="preparacion">Preparacion:</label>
                                     </div>
-                                    <textarea id="preparacion" name="preparacion" rows="5" cols="40"
-                                        required></textarea> <br>
+                                    <textarea id="preparacion" name="preparacion" rows="5" cols="40" placeholder="Ej: -- Paso 1 
+    Ajndfhlsadh jjnfvhb kjvbs 
+    ewafbrefbdgwhd dwfuvwfvwge 
+    dwevfugwe renfuwbfvuei" required></textarea> <br>
                                     <br>
                                 </div>
                             </div>
@@ -208,12 +216,12 @@
                                 <input type="submit" class="btn btn-primary">
                             </a>
                             <div>
-                            <a href="Vista_de_Usuario.html">
-                                <input type="reset">
-                            </a>
-                        </div>
+                                <a href="Vista_de_Usuario.html">
+                                    <input type="reset">
+                                </a>
+                            </div>
                         </center>
-                        
+
                     </form>
                 </div>
             </div>

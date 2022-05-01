@@ -9,22 +9,20 @@ $(document).ready(function () {
         let mensajeMostrar = "";
         let entrar = true;
 
-        
-        if (nomb.length < 4 || nomb.length > 10) {
-            mensajeMostrar += "La longitud del nombre de usuario no es adecuada, debe tener entre 4 y 10 caracteres<br>";
-            entrar = false;
-        }
 
-        
-        var PrimeraLetra = nomb.charAt(0);
-        if (!esMayuscula(PrimeraLetra)) {
-            mensajeMostrar += "La primera letra del nombre de usuario debe ser mayuscula<br>";
+        if (!esMayuscula($("#nomUser"))) {
+            mensajeMostrar += "La primera letra del nombre debe ser mayuscula<br>";
             entrar = false;
         }
 
         var UltimoDigito = nomb.charAt(nomb.length-1);
         if(isNaN(UltimoDigito)){
             mensajeMostrar += "El ultimo digito del nombre de usuario debe ser un numero<br>";
+            entrar = false;
+        }
+
+        if (nomb.length < 4 || nomb.length > 60) {
+            mensajeMostrar += "La longitud del nombre de usuario no es adecuada, debe tener entre 4 y 60 caracteres<br>";
             entrar = false;
         }
         
