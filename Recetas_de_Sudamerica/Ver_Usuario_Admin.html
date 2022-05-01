@@ -11,6 +11,36 @@
     <!-- Title -->
     <title>Recetas de Sudamérica </title>
 
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!--Implentar los datos de API-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //Agrego el evento click al botón
+            $("#boton").click(function () {
+                //Consultar el servicio web
+                $.get("https://randomuser.me/api/", function (data) {
+                    //Recorrer una lista mediante el ciclo for (each)
+                    $.each(data.results, function (i, item) {
+                        //Mostrar la informacion de cada elemento de a lista en a tabla
+                        $("#tabla").append("<tr><td>" + item.name.first +
+                            "</td><td>" + item.email +
+                            "</td><td>" + item.phone +
+                            "</td><td>" + item.cell +
+                            "</td></tr>");
+                    });
+                });
+            });
+        })
+    </script>
+
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/cocinero.png">
 
@@ -109,125 +139,80 @@
     </div>
 
     <!-- ***** Menu Area Start ***** -->
-    <div class="caviar-food-menu section-padding-150 clearfix">
+    <div class="caviar-food-menu section-padding-150 clearfix" style="padding-top: 50px;">
         <div class="container">
             <div class="row">
 
-                <div class="col-12">
+                <div class="container-fluid">
+                    <div class="row">
+                        <h1>Datos del Servicio Web</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <input id="texto" type="text" class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                            <button id="boton" class="btn btn-danger" type="button">Traer Datos</button>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <table id="tabla" class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Comida</th>
+                                        <th>Foto</th>
+                                    </tr>
+                                </thead>
+            
+                                <tbody>
+            
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+
+                <!--<div class="col-12">
                     <div class="caviar-projects-menu">
                         <div class="text-center portfolio-menu">
                             <button class="active" data-filter="*">Usuarios Registrados</button>
                         </div>
                     </div>
 
-                    <div>
-                        <!-- Single Gallery Item -->
-
-                        <div class="container" style="margin-bottom: 100px;">
-                            <div class="row">
-                                <div class="col-12 menu-heading">
-                                    <div class="section-heading text-center">
-
-                                    </div>
-                                </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <button id="boton" class="btn btn-danger" type="button">Traer Datos</button>
                             </div>
-                            <div class="row">
-
-                                <div class="col-12 col-sm-12 col-md-4">
-                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="0.5s">
-                                        <img src="img/Token/Mattheus.png" alt="Sin Imagen">
-                                        <div class="dish-info">
-                                            <h6 class="dish-name">Mattheus</h6>
-                                            <a href="modificar_usuario_admin.html">
-                                                <p class="dish-price">Ver</p>
-                                            </a>
-                                            <a href="Ver_Usuario_Admin.html">
-                                                <p class="dish-price" style="font-size: 12PX;">Eliminar</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 col-sm-12 col-md-4">
-                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
-                                        <img src="img/Token/perfil.png" alt="Sin Imagen">
-                                        <div class="dish-info">
-                                            <h6 class="dish-name">Usuario2</h6>
-                                            <a href="modificar_usuario_admin.html">
-                                                <p class="dish-price">Ver</p>
-                                            </a>
-                                            <a href="Ver_Usuario_Admin.html">
-                                                <p class="dish-price" style="font-size: 12PX;">Eliminar</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-4">
-                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1.5s">
-                                        <img src="img/Token/perfil.png" alt="Sin Imagen">
-                                        <div class="dish-info">
-                                            <h6 class="dish-name">Usuario3</h6>
-                                            <a href="modificar_usuario_admin.html">
-                                                <p class="dish-price">Ver</p>
-                                            </a>
-                                            <a href="Ver_Usuario_Admin.html">
-                                                <p class="dish-price" style="font-size: 12PX;">Eliminar</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 col-sm-12 col-md-4" style="margin-top: 10px;">
-                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="0.5s">
-                                        <img src="img/Token/perfil.png" alt="Sin Imagen">
-                                        <div class="dish-info">
-                                            <h6 class="dish-name">Usuario4</h6>
-                                            <a href="modificar_usuario_admin.html">
-                                                <p class="dish-price">Ver</p>
-                                            </a>
-                                            <a href="Ver_Usuario_Admin.html">
-                                                <p class="dish-price" style="font-size: 12PX;">Eliminar</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="col-12 col-sm-12 col-md-4" style="margin-top: 10px;">
-                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
-                                        <img src="img/Token/perfil.png" alt="Sin Imagen">
-                                        <div class="dish-info">
-                                            <h6 class="dish-name">Usuario5</h6>
-                                            <a href="modificar_usuario_admin.html">
-                                                <p class="dish-price">Ver</p>
-                                            </a>
-                                            <a href="Ver_Usuario_Admin.html">
-                                                <p class="dish-price" style="font-size: 12PX;">Eliminar</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-4" style="margin-top: 10px;">
-                                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1.5s">
-                                        <img src="img/Token/perfil.png" alt="Sin Imagen">
-                                        <div class="dish-info">
-                                            <h6 class="dish-name">Usuario6</h6>
-                                            <a href="modificar_usuario_admin.html">
-                                                <p class="dish-price">Ver</p>
-                                            </a>
-                                            <a href="Ver_Usuario_Admin.html">
-                                                <p class="dish-price" style="font-size: 12PX;">Eliminar</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-                            </div>
+                            <div class="col-md-4"></div>
                         </div>
-                    </div>
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-10">
+                                <table id="tabla" class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Nombre</th>
+                                            <th>Nombre de usuario</th>
+                                            <th>Correo</th>
+                                        </tr>
+                                    </thead>
+                
+                                    <tbody>
+                
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                    </div>-->
+
                 </div>
             </div>
         </div>
