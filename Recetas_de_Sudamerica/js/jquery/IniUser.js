@@ -11,21 +11,21 @@ $(document).ready(function () {
         $("#iniUser").html("");
         $("#iniAdmin").html("");
     
-        if (nomb == "ara" && pass == "ara"){
+        if (nomb == "user" && pass == "user"){
             mensajeMostrar += "Cuenta Encontrada<br>";
             entrar = true;
         }
-        else if (nomb == "ere" && pass == "ere"){
+        else if (nomb == "admin" && pass == "admin"){
             mensajeMostrar += "Cuenta Encontrada<br>";
             entrar = true;
         }
         if(entrar){
             $("#mensajeLog").html(mensajeMostrar);
             
-            if(nomb == "ara"){
+            if(nomb == "user"){
                 $("#iniUser").html(aceptado);
             }
-            else if(nomb == "ere"){
+            else if(nomb == "admin"){
                 $("#iniAdmin").html(aceptado);
             }
 

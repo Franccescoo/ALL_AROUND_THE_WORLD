@@ -2,7 +2,9 @@ $(document).ready(function () {
 
     $("#formRegi").submit(function (e) {
         e.preventDefault();
-        var nomb = $("#nickUserName").val();
+        var nombre = $("#nomUser").val();
+        var ape = $("#apeUser").val();
+        var nick = $("#nickUserName").val();
         var pass1 = $("#password1").val();
         var pass2 = $("#password2").val();
 
@@ -10,18 +12,27 @@ $(document).ready(function () {
         let entrar = true;
 
 
-        if (!esMayuscula($("#nomUser"))) {
+        if (!esMayuscula(nombre.charAt(0))) {
             mensajeMostrar += "La primera letra del nombre debe ser mayuscula<br>";
             entrar = false;
         }
 
-        var UltimoDigito = nomb.charAt(nomb.length-1);
+        if(!ape==""){
+
+            if (!esMayuscula(ape.charAt(0))) {
+                mensajeMostrar += "La primera letra del apellido debe ser mayuscula<br>";
+                entrar = false;
+            }
+
+        }
+
+        var UltimoDigito = nick.charAt(nick.length-1);
         if(isNaN(UltimoDigito)){
             mensajeMostrar += "El ultimo digito del nombre de usuario debe ser un numero<br>";
             entrar = false;
         }
 
-        if (nomb.length < 4 || nomb.length > 60) {
+        if (nick.length < 4 || nick.length > 60) {
             mensajeMostrar += "La longitud del nombre de usuario no es adecuada, debe tener entre 4 y 60 caracteres<br>";
             entrar = false;
         }
@@ -34,7 +45,7 @@ $(document).ready(function () {
 
 
         if(entrar){
-            $("#mensajeReg").html("Formulario Enviado");
+            $("#mensajeReg").html("Su cuenta ha sido registrada");
             
 
         }
