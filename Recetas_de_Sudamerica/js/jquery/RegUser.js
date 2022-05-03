@@ -65,7 +65,7 @@ $(document).ready(function () {
 
 
         if (entrar) {
-            $("#mensajeReg").html("Su cuenta ha sido registrada");
+            $("#mensajeReg").html("Registro exitoso");
 
 
         }
