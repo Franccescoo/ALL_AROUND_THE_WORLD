@@ -22,7 +22,7 @@ $(document).ready(function () {
         }
 
         if(ingre.length > 200){
-            mensajeMostrar += "La longitud de los ingredientes no puede contener mas de 50 caracteres";
+            mensajeMostrar += "La longitud de los ingredientes no puede contener mas de 200 caracteres";
             entrar = false;
         }
 
