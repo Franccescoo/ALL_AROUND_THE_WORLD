@@ -41,7 +41,7 @@ $(document).ready(function () {
 
         var UltimoDigito = nick.charAt(nick.length - 1);
         if (isNaN(UltimoDigito)) {
-            mensajeMostrar += "El ultimo digito del nombre de usuario debe ser un numero<br>";
+            mensajeMostrar += "El último dígito del nombre de usuario debe ser un número<br>";
             entrar = false;
         }
 
@@ -51,7 +51,7 @@ $(document).ready(function () {
         }
 
         if (mail.length > 70) {
-            mensajeMostrar += "El correo no puede contener mas de 70 digitos<br>";
+            mensajeMostrar += "El correo no puede contener mas de 70 dígitos<br>";
             entrar = false;
         }
 
@@ -66,7 +66,7 @@ $(document).ready(function () {
         }
 
         if ((isNaN(UltimoDigiPass1)) || (isNaN(UltimoDigiPass2))) {
-            mensajeMostrar += "El ultimo digito de la contraseña debe ser un numero<br>";
+            mensajeMostrar += "El último dígito de la contraseña debe ser un número<br>";
             entrar = false;
         }
 

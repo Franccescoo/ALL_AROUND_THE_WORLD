@@ -7,7 +7,7 @@ $(document).ready(function () {
     
         let mensajeMostrar = "";
         let entrar = false;
-        let aceptado = "Iniciar sesion";
+        let aceptado = "Iniciar sesión";
         $("#iniUser").html("");
         $("#iniAdmin").html("");
     
