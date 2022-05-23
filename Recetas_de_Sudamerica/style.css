@@ -49,10 +49,10 @@
     margin: 8px 10px 12px;
 }
 /* Los 4 tipos de botones para cambiar el color del gradient */
-.gradient-button-1 {background-image: linear-gradient(to right, #2BC0E4 0%, #EAECC6 51%, #2BC0E4 100%)}
+.gradient-button-1 {background-image: linear-gradient(to right, #000000 0%, #888888 51%, #05d421 100%)}
 .gradient-button-1:hover { background-position: right center; }
 
-.gradient-button-2 {background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%)}
+.gradient-button-2 {background-image: linear-gradient(to right, #000000 0%, #888888 51%, #c20909 100%)}
 .gradient-button-2:hover { background-position: right center; }
 
 
