@@ -53,28 +53,23 @@ $(document).ready(function () {
             entrar = false;
         }
 
-        if ((pass1.length > 60 || pass1.length < 4) || (pass2.length > 60 || pass2.length < 4)) {
-            mensajeMostrar += "La contraseñas deben tener entre 4 y 60 caracteres<br>----------------<br>";
+        if ((pass1.length > 60 || pass1.length < 4)) {
+            mensajeMostrar += "La contraseña debe tener entre 4 y 60 caracteres<br>----------------<br>";
             entrar = false; 
         }
 
-        if (!(isUpper(pass1) || isUpper(pass2))) {
-            mensajeMostrar += "Una letra de las contraseñas debe ser mayúscula<br>----------------<br>";
+        if (!(isUpper(pass1))) {
+            mensajeMostrar += "Una letra de la contraseña debe ser mayúscula<br>----------------<br>";
             entrar = false;
         }
 
-        if (!tieneNumero(pass1) || !tieneNumero(pass2)) {
-            mensajeMostrar += "Un dígito de las contraseñas debe ser un número<br>----------------<br>";
+        if (!tieneNumero(pass1)) {
+            mensajeMostrar += "Un dígito de la contraseña debe ser un número<br>----------------<br>";
             entrar = false;
         }
 
-
-        if (pass1 != pass2) {
-            mensajeMostrar += "Las contraseñas no coinciden<br>----------------<br>";
-            entrar = false;
-        }
         if (entrar) {
-            $("#mensajeReg").html("Registro exitoso");
+            $("#mensajeReg").html("Cambio exitoso");
         }
         else {
             $("#mensajeReg").html(mensajeMostrar);
