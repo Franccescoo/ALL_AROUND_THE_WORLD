@@ -12,22 +12,22 @@ $(document).ready(function () {
         let entrar = true;
 
         if(img.length > 70){
-            mensajeMostrar += "La longitud de la url no puede contener mas de 70 caracteres";
+            mensajeMostrar += "La longitud de la url no puede contener mas de 70 caracteres<br>----------------<br>";
             entrar = false;
         }
 
         if(nomRec.length > 50){
-            mensajeMostrar += "La longitud del nombre no puede contener mas de 50 caracteres";
+            mensajeMostrar += "La longitud del nombre no puede contener mas de 50 caracteres<br>----------------<br>";
             entrar = false;
         }
 
         if(ingre.length > 200){
-            mensajeMostrar += "La longitud de los ingredientes no puede contener mas de 200 caracteres";
+            mensajeMostrar += "La longitud de los ingredientes no puede contener mas de 200 caracteres<br>----------------<br>";
             entrar = false;
         }
 
         if(prepa.length > 500){
-            mensajeMostrar += "La longitud de la preparacion no puede contener mas de 500 caracteres";
+            mensajeMostrar += "La longitud de la preparacion no puede contener mas de 500 caracteres<br>----------------<br>";
             entrar = false;
         }
 

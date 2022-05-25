@@ -21,6 +21,8 @@
     <link href="css/responsive/responsive.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/Usuario.css">
+    <!--Popup-->
+    <link rel="stylesheet" href="css/popup.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
@@ -133,6 +135,7 @@
         <a href="Ver_Receta_Usuario.html">Ver Recetas</a>
         <a href="Creacion_Recetas.html">Subir Recetas</a>
     </div>
+    <!-- ***** Menu Area Start ***** -->
 
     <div class="caviar-contact-area d-md-flex align-items-center" id="contact">
         <div class="contact-form-area d-flex justify-content-end">
@@ -142,32 +145,29 @@
                 </div>
                 <form action="/action_page.php" method="post" id="formRegi">
                     <div class="row">
-                       
                         <div class="col-12">
-                            <p>Nueva Contraseña:</p>
-                            <input type="password" class="form-control" placeholder="Ej: Patatun1" value="Abc123456789" id="password1"
+                            <p>Ingresar Nueva Contraseña</p>
+                            <input type="password" class="form-control" placeholder="Ej: Patatun1" id="password1"
                                 required>
                             <p>Confirmar Contraseña</p>
-                            <input type="password" class="form-control" placeholder="Ej: Patatun1" value="Abc123456789" id="password2"
+                            <input type="password" class="form-control" placeholder="Ej: Patatun1" id="password2"
                                 required>
                         </div>
 
-
-
-
-
-
                         <div class="col-12" style="text-align: center;">
-                            <input type="submit" class="gradient-button gradient-button-1" value="Confirmar">
+                            <div class="popup" onclick="myFunction1()">
+                                <input type="submit" class="gradient-button gradient-button-1" value="Confirmar">
+                                <span class="popupcre" id="myPopup1"><p id="mensajeReg" style="color: white;"></p></span>
+                            </div>
+                            
                             <input type="reset" class="gradient-button gradient-button-2" value="Cancelar">
-                            <p id="mensajeReg"></p>
-                        </div>
+                        </div> 
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    <!-- ***** Contact Area End ***** -->
+    <!-- ***** Menu Area End ***** -->
 
     <!-- ***** Footer Area Start ***** -->
     <footer class="caviar-footer-area">
@@ -206,4 +206,12 @@
     <script src="js/active.js"></script>
     <!--Validaciones-->
     <script src="js/jquery/ModPass.js"></script>
+    <!--Popup-->
+    <script>
+        // When the user clicks on div, open the popup
+        function myFunction1() {
+            var popup = document.getElementById("myPopup1");
+            popup.classList.toggle("show");
+        }
+    </script>
 </body>
